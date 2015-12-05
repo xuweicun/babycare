@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <include file="Public/flatui-head"/>
+<title>增加规格选项</title>
+</head>
+<body>
+
+<include file="Public/flatui-navbar"/>
+<!--图像区-->
+
+
+<div class="container">
+<div class="row">
+ <ul class="breadcrumb">
+            <li><a href="__CONTROLLER__">物品管理</a></li>
+            <li><a href="__MODULE__/bestforbaby/viewitem/id/{$item.id}">查看物品</a></li>
+            <li><a>新增规格选项</a></li>
+  </ul>
+
+	<form method="post" id="form" action="__CONTROLLER__/{$action}" name="f1" enctype="multipart/form-data" class="form form-inline">
+  		<input name="item_id" value="{$item.id}" style="display:none;"/>
+      <notempty name="size">
+		  <input name="id" value="{$size.id}" style="display:none;"/>
+      </notempty><!--编辑时需要-->
+	  	<label for="size">输入规格描述：</label>
+	  	<input id="size" class="form-control" name="size" placeholder="默认规格" value="{$size.size}" class="validate[required]"/>
+	  	<button type="submit" class="btn btn-primary">提交</button>
+	</form>
+</div>
+<div class="row">
+ <ul class="breadcrumb">
+ 	<li>当前已有的规格选项</li>
+ 	<foreach name="sizeOption" item="t">
+            <li><a href="__CONTROLLER__/editSize/itemID/{$item.id}/sizeID/{$t.id}">{$t.size|default='默认'}</a></li>
+    </foreach>
+  </ul>
+
+</div></div>
+<!-- 加载编辑器的容器 --> 
+ <script src="/Public/js/jquery-1.11.1.js"></script>    
+   <script src="/Public/js/onload.js"></script>    
+    
+   <script src="/Public/js/jquery.validationEngine-zh_CN.js"></script>  
+   <script src="/Public/js/jquery.validationEngine.js"></script> 
+  <script type="text/javascript" charset="utf-8">
+ $('#form-id').validationEngine(); 
+ 
+        // 自定义参数调用 
+        $('#form').validationEngine('attach', { 
+        promptPosition: 'centerRight', 
+        scroll: false,
+       // ajaxFormValidation:true,
+       ajaxFormValidationMethod:'post',
+       // OnAjaxFormComplete:'ajaxFormValidationCallback'
+       
+      
+          }); 
+
+</script> 
+ <include file="Public/flatui-tail" />
+</body>
+</html>

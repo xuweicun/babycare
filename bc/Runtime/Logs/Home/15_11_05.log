@@ -1,0 +1,420 @@
+[ 2015-11-05T17:12:05+08:00 ] 127.0.0.1 /index.php/home/bestforbaby
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bc_best_for_baby` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( 1=1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+NOTIC: [8] Undefined index: company D:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2015-11-05T17:12:09+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/viewitem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_item_view` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `bc_item_view` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_item_size` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `bc_item_size` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0185s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id WHERE Brand.id = '20' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: content D:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 127 行.
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( brand_id=20 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_item_img` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `bc_img` [ RunTime:0.0056s ]
+SQL: SELECT ItemImg.id AS id,ItemImg.img_id AS img_id,ItemImg.view_id AS view_id,Img.img AS viewImg,Img.thumb_img AS thumb_img FROM bc_item_img ItemImg  JOIN bc_img Img ON ItemImg.img_id=Img.id WHERE ( item_id = 1 and view_id = 8 )  [ RunTime:0.0003s ]
+SQL: SELECT ItemImg.id AS id,ItemImg.img_id AS img_id,ItemImg.view_id AS view_id,Img.img AS viewImg,Img.thumb_img AS thumb_img FROM bc_item_img ItemImg  JOIN bc_img Img ON ItemImg.img_id=Img.id WHERE ( item_id = 1 and view_id = 9 )  [ RunTime:0.0003s ]
+
+[ 2015-11-05T17:12:40+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/viewitem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_item_view` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bc_item_view` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_item_size` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bc_item_size` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0020s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id WHERE Brand.id = '20' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: content D:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 127 行.
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( brand_id=20 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_item_img` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bc_img` [ RunTime:0.0018s ]
+SQL: SELECT ItemImg.id AS id,ItemImg.img_id AS img_id,ItemImg.view_id AS view_id,Img.img AS viewImg,Img.thumb_img AS thumb_img FROM bc_item_img ItemImg  JOIN bc_img Img ON ItemImg.img_id=Img.id WHERE ( item_id = 1 and view_id = 8 )  [ RunTime:0.0002s ]
+SQL: SELECT ItemImg.id AS id,ItemImg.img_id AS img_id,ItemImg.view_id AS view_id,Img.img AS viewImg,Img.thumb_img AS thumb_img FROM bc_item_img ItemImg  JOIN bc_img Img ON ItemImg.img_id=Img.id WHERE ( item_id = 1 and view_id = 9 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bc_instruction_title` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `bc_instruction_title`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bc_instruction` WHERE `item_id` = 1 AND `title_id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bc_instruction` WHERE `item_id` = 1 AND `title_id` = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_instruction` WHERE `item_id` = 1 AND `title_id` = '6' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_instruction` WHERE `item_id` = 1 AND `title_id` = '11' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_instruction` WHERE `item_id` = 1 AND `title_id` = '12' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_instruction` WHERE `item_id` = 1 AND `title_id` = '13' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: options D:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 159 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_item_view` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_item_size` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_category` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( brand_id=20 ) GROUP BY version  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0020s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 20 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: item_id D:\wamp\www\babycare\bc\Runtime\Cache\Home\200ed84ba670831af81e8744434dd69f.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-11-05T17:12:45+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-11-05T17:14:51+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\babycare\bc\Runtime\Cache\Home\999d59e645ed779ad795e77435eabe69.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2015-11-05T17:16:13+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2015-11-05T17:16:16+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2015-11-05T17:20:59+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2015-11-05T17:21:22+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2015-11-05T17:23:14+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-11-05T17:23:46+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2015-11-05T17:25:14+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2015-11-05T17:25:32+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2015-11-05T17:25:46+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2015-11-05T17:26:16+08:00 ] 127.0.0.1 /index.php/Home/Instruction/viewBfbItems/item_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+

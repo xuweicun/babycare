@@ -1,0 +1,492 @@
+[ 2015-08-25T08:54:23+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T08:54:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-08-25T08:54:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-08-25T08:54:47+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T08:54:47+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T08:55:19+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:05:51+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:05:51+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:05:52+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:05:52+08:00 ] 127.0.0.1 /Public/assets/script/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T11:05:52+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:05:53+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:06:01+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:06:19+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:06:55+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:13:46+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:15:16+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:17:25+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:18:05+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:26:21+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T11:26:21+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T11:26:27+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T11:26:28+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T11:27:18+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:27:19+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:27:19+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:27:19+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T11:27:19+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:27:27+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T11:27:27+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T11:28:51+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T11:28:55+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T11:28:55+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T13:47:42+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T13:47:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-08-25T13:47:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-08-25T15:41:25+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T15:41:33+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T15:41:33+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T16:19:30+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:04:14+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:04:14+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:04:15+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:05:31+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:31+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:31+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:31+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:32+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:05:46+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:46+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:46+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:05:47+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:06:33+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:06:33+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:11:41+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:11:41+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:12:18+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:12:18+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:12:18+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:12:19+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:12:21+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:12:21+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:13:06+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:13:06+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:15:15+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:15:15+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:15:15+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-25T17:15:16+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:15:18+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:15:18+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:16:19+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:16:19+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:17:00+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:17:00+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T17:18:24+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:18:51+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:19:18+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T17:21:09+08:00 ] 127.0.0.1 /babycare/ThinkPHP/Public/Uploads/20150326/5513bd70d2e5a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:Babycare
+
+[ 2015-08-25T18:56:01+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T18:56:01+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-08-25T18:59:49+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-25T18:59:49+08:00 ] 127.0.0.1 /Public/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+ERR: 无法加载模块:Public
+

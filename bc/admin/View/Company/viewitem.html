@@ -1,0 +1,24 @@
+<html><head></head>
+<body>
+<a href="__CONTROLLER__/">首页</a>
+名称：{$item.name}{if $item.alias}/{$item.alias} {/if}
+国家：{$item.country}
+始于{$item.since}年
+<br/>
+
+
+<br/>
+
+<foreach name="instructions" item="t">
+<div>
+<p>{$item.name}</p>
+<p>{$item.alias}</p>
+<a href="__CONTROLLER__/editInstruction/id/{$t.id}">修改</a>
+<a href="__CONTROLLER__/deleteInstruction/id/{$t.id}">删除</a>
+</div>
+</foreach>
+<a href="__CONTROLLER__/addInstruction/id/{$item.id}">增加说明</a>
+<a href="__CONTROLLER__/edititem/id/{$item.id}">编辑</a>
+
+</body>
+</html>

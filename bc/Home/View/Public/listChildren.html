@@ -1,0 +1,21 @@
+<!--
+$optionClickAction:点击效果,与当前选项的ID有关；
+$blurAction:弃选效果；
+$defaultClickAction:全部弃选效果;
+-->
+
+<if condition="$type eq 'select'">
+<!--  <select name="{$select_name}" id="{$id}">-->
+    <option>{$to_do|default='Select Option'}</option>
+    <foreach name="items" item="t">
+      <option value="{$t.id}">{$t.name}</option>
+    </foreach>
+    <option value="{$default|default='0'}">其他</option>
+ <!-- </select>-->
+  <else/>
+ <!-- <div id="{$id}">-->
+    <foreach name="items" item="t"> 
+    	<a href="{$href}{$t.id}">{$t.name}</a> <br/>
+    </foreach>
+ <!-- </div>-->
+</if>

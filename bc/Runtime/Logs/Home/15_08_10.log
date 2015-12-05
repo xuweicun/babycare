@@ -1,0 +1,2215 @@
+[ 2015-08-10T09:06:08+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0459s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0522s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0552s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003442s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002238s ]
+
+[ 2015-08-10T09:06:13+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T09:06:48+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0066s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002593s ]
+
+[ 2015-08-10T09:06:51+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T09:08:22+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=6 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:10:06+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001741s ]
+
+[ 2015-08-10T09:10:54+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001548s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003519s ]
+
+[ 2015-08-10T09:11:54+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=14 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:12:02+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=7 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:12:04+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:12:05+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0008s ]
+
+[ 2015-08-10T09:12:07+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=6 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:12:10+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002382s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003964s ]
+
+[ 2015-08-10T09:13:59+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0053s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2015-08-10T09:14:03+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:14:05+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=8 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:14:08+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002221s ]
+
+[ 2015-08-10T09:14:09+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:14:21+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:16:20+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0048s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2015-08-10T09:16:23+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002492s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0011s ]
+
+[ 2015-08-10T09:16:26+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003987s ]
+
+[ 2015-08-10T09:16:27+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:18:00+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0054s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2015-08-10T09:18:04+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004148s ]
+
+[ 2015-08-10T09:18:05+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: err C:\wamp\www\babycare\bc\Home\Controller\CategoryController.class.php 第 280 行.
+
+[ 2015-08-10T09:18:40+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0047s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002228s ]
+
+[ 2015-08-10T09:18:44+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001379s ]
+
+[ 2015-08-10T09:18:48+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0009s ]
+
+[ 2015-08-10T09:23:46+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:25:13+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:25:21+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0072s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002081s ]
+
+[ 2015-08-10T09:25:25+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T09:25:34+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.167003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002788s ]
+
+[ 2015-08-10T09:25:43+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T09:43:19+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0007s ]
+
+[ 2015-08-10T09:43:30+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0045s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2015-08-10T09:43:34+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:43:36+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:43:38+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=6 )  [ RunTime:0.0006s ]
+
+[ 2015-08-10T09:47:29+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\f60b3fe1fd169a2a84c902c77facf5ac.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003489s ]
+
+[ 2015-08-10T09:47:32+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0043s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+
+[ 2015-08-10T09:47:37+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem/action/selectbrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='52' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.1051s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='52' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0112s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 52 )  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001920s ]
+
+[ 2015-08-10T09:47:41+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=6 )  [ RunTime:0.0013s ]
+
+[ 2015-08-10T09:47:43+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001413s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=8 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T09:47:46+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=7 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T09:50:40+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\f60b3fe1fd169a2a84c902c77facf5ac.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005568s ]
+
+[ 2015-08-10T09:50:43+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0049s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001520s ]
+
+[ 2015-08-10T09:50:44+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0058s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=2 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005614s ]
+
+[ 2015-08-10T09:50:50+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0046s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=13 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003927s ]
+
+[ 2015-08-10T09:50:52+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem/action/selectbrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0043s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 20 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 96 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2015-08-10T09:50:58+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=17 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined variable: select_name C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Runtime\Cache\Home\a663045c7f10095c7eeb2dad6ff7fa11.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002048s ]
+
+[ 2015-08-10T10:03:24+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem/action/selectbrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003543s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0050s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 20 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: company C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 331 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 100 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 107 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001936s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003548s ]
+
+[ 2015-08-10T10:26:54+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 611 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0048s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 618 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined variable: corpName C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 25 行.
+NOTIC: [8] Undefined variable: category C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2015-08-10T11:00:36+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0112s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 618 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0113s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 625 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: corpName C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 25 行.
+NOTIC: [8] Undefined variable: category C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2015-08-10T11:01:11+08:00 ] 127.0.0.1 /index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2015-08-10T11:01:12+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `bc_best_for_baby`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001884s ]
+
+[ 2015-08-10T11:01:20+08:00 ] 127.0.0.1 /index.php/Home/bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\f60b3fe1fd169a2a84c902c77facf5ac.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002781s ]
+
+[ 2015-08-10T11:01:22+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0618s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002417s ]
+
+[ 2015-08-10T11:01:23+08:00 ] 127.0.0.1 /index.php/Home/bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\f60b3fe1fd169a2a84c902c77facf5ac.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001587s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004012s ]
+
+[ 2015-08-10T11:01:24+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/insertitem/action/selectbrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_brand` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='29' )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='29' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0041s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 29 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: corpName C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 25 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 103 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 110 行.
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\67199ea0aa325cd5d2a61d56c5189d6d.php 第 116 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2015-08-10T11:01:31+08:00 ] 127.0.0.1 /index.php/Home/category/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2015-08-10T11:01:32+08:00 ] 127.0.0.1 /index.php/Home/brand/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: id C:\wamp\www\babycare\bc\Home\Controller\BrandController.class.php 第 155 行.
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bc_category` WHERE ( layer = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bc_category` WHERE ( layer = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\babycare\bc\Home\Controller\BrandController.class.php 第 201 行.
+NOTIC: [8] Undefined variable: categories C:\wamp\www\babycare\bc\Home\Controller\BrandController.class.php 第 159 行.
+NOTIC: [8] Undefined variable: items C:\wamp\www\babycare\bc\Home\Controller\BrandController.class.php 第 160 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\1148201f7e77b8638f6106cb8d175fdc.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2015-08-10T11:01:36+08:00 ] 127.0.0.1 /index.php/Home/bestforbaby/insertitem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Runtime\Cache\Home\f60b3fe1fd169a2a84c902c77facf5ac.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.162115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001966s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003681s ]
+
+[ 2015-08-10T11:02:37+08:00 ] 127.0.0.1 /index.php/Home/bestforbaby/viewitems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bc_best_for_baby` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bc_best_for_baby` LIMIT 0,5   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2015-08-10T11:13:54+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0097s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 630 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0093s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 637 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 329 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 347 行.
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0042s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+
+[ 2015-08-10T11:14:59+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0066s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 630 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0051s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 637 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 329 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0043s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: categoryDb C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 350 行.
+
+[ 2015-08-10T11:22:23+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0052s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0040s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined variable: corpName C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002809s ]
+
+[ 2015-08-10T11:23:10+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0042s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0041s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: companyName C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.175888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.176311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003285s ]
+
+[ 2015-08-10T11:23:34+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0044s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0042s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: corpName C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2015-08-10T11:23:58+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0050s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0042s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: corpName C:\wamp\www\babycare\bc\Runtime\Cache\Home\4bfdc44380048107d0cf262a5cef51b5.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001367s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2015-08-10T11:24:25+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0054s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0051s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002210s ]
+
+[ 2015-08-10T11:24:49+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=4 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T11:24:51+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0009s ]
+
+[ 2015-08-10T11:36:07+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0066s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0049s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2015-08-10T11:36:31+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0051s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0040s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001535s ]
+
+[ 2015-08-10T11:36:36+08:00 ] 127.0.0.1 /index.php/home/category/listchildren/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `bc_category` WHERE ( father_id=5 )  [ RunTime:0.0009s ]
+
+[ 2015-08-10T11:40:06+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/editBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0006s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 590 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0042s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2015-08-10T11:40:15+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0050s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=2 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001564s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004390s ]
+
+[ 2015-08-10T11:40:17+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/editBrand/action/selectbrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0058s ]
+SQL: UPDATE `bc_best_for_baby` SET `brand_id`='29' WHERE `id` = 0 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2015-08-10T11:40:18+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/viewitem/id/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003889s ]
+
+[ 2015-08-10T11:40:21+08:00 ] 127.0.0.1 /index.php/home/bestforbaby
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `bc_best_for_baby`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2015-08-10T11:44:38+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/editBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 590 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0043s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.162642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002409s ]
+
+[ 2015-08-10T11:44:45+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0052s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0048s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2015-08-10T11:44:48+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/editBrand/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 590 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0055s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2015-08-10T11:44:51+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0056s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=3 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T11:44:53+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0046s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=3 )  [ RunTime:0.0005s ]
+
+[ 2015-08-10T11:44:54+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0046s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002766s ]
+
+[ 2015-08-10T11:44:57+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/editBrand/action/selectbrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0054s ]
+SQL: UPDATE `bc_best_for_baby` SET `brand_id`='29' WHERE `id` = 1 [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2015-08-10T11:44:59+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/edititem/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( id=1 )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0042s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( item_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: item C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 332 行.
+NOTIC: [8] Undefined variable: aciton C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 343 行.
+NOTIC: [8] Undefined variable: brand_id C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 345 行.
+SQL: SELECT * FROM `bc_brand` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `bc_brand_category` WHERE ( 1=1 AND brand_id='20' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `bc_company` WHERE ( 1=1 AND id='13' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cn_name C:\wamp\www\babycare\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 221 行.
+SQL: SHOW COLUMNS FROM `bc_instruction` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bc_instruction` WHERE ( 1=1 AND item_id='20' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_brand_category` [ RunTime:0.0042s ]
+SQL: SELECT BrandCategory.id AS id,BrandCategory.brand_id AS brand_id,BrandCategory.category_id AS category_id,Category.name AS name FROM bc_brand_category BrandCategory  JOIN bc_category Category ON BrandCategory.category_id=Category.id WHERE ( brand_id = 0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer = 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002411s ]
+
+[ 2015-08-10T17:25:50+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby/editBrand/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bc_company` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `bc_company`  [ RunTime:0.0007s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\babycare\bc\Home\Controller\BestforbabyController.class.php 第 590 行.
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0074s ]
+SQL: SELECT Brand.id AS id,Brand.name AS name,Brand.cn_name AS cn_name,Brand.category_id AS category_id,Brand.corp_id AS corp_id,Company.name AS companyName FROM bc_brand Brand  JOIN bc_company Company ON Brand.corp_id=Company.id LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2015-08-10T17:25:53+08:00 ] 127.0.0.1 /index.php/Home/Company/listChildren/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `bc_brand` [ RunTime:0.0094s ]
+SQL: SELECT `cn_name`,`id` FROM `bc_brand` WHERE ( corp_id=2 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001902s ]
+

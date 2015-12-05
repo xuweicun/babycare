@@ -1,0 +1,44 @@
+<include file="Public/flatui-head"/>
+
+<body>
+	<p>
+	规格：{$size.size|default="默认"}
+	</p>
+	<p>
+	外观：{$view.view|default="默认"}
+	</p>
+	<div class="container" id="gallery">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<div class="carousel slide" id="myslide">
+				<div class="carousel-inner">
+					<foreach name="imgs" item="t">
+					    <div class="item"><img src="{$t.viewimg}"></div>
+					</foreach>
+				</div>
+				<a class="carousel-control left" href="#myslide" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="javascript:next();" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+	
+	
+	<BR>
+	<a href="__CONTROLLER__/viewitem/id/{$item.id}">{$item.category}</a>
+	<br>
+
+	<a href="__CONTROLLER__/insertimg/item_id/{$item.id}">插入图像</a>
+	<br>
+	<include file="Public/flatui-tail" />
+	<script type="text/javascript">
+	$("document").ready(
+		function()
+		{
+			$("#gallery div.item").first().addClass("active");
+		});
+	</script>
+</body>
+</html>

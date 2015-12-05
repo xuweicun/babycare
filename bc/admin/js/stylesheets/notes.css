@@ -1,0 +1,36 @@
+#c-black-container{background-color: #333333;}
+#c-white-container{background-color: #ffffff;}
+.c-content-list-001{margin-top:20px;padding:10px 2px 2px 10px;min-height:640px;}
+#c-page-box,.c-page-box{background-position: center top;margin-left: auto;margin-right: auto;width:100%;max-width: 1080px;height:100%;}.c-page,#c-page{    background-color: #ede9e9;    height:100%;vertical-overflow:scroll; background-image: url("../images/black-and-white.jpg");    background-position: center top;    background-repeat: repeat-x;    margin: 0 auto;    padding: 50px 0 0;}
+.c-appname-area,#c-appname-area{   color: #ffffff;
+    font-size: 25px;
+    text-align: center;font-family: comic sans ms,microsoft yahei;}
+	#c-appname-area span{ padding:0 5px 0 5px;   font-size: 25px;background-color: #cc4324;}
+	.c-app-description,#c-app-description{    background-color: #cc4324;
+    background-position: center top;
+    border: 1px none #990000;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 20px;width:auto;overflow:hidden;margin:auto;color:#ffffff;}
+.c-banner,#c-banner{    background-color: #009933;
+    background-position: center top;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+	}
+.c-banner .c-inner,#c-banner #c-inner{width:98%;margin:auto;}
+.c-banner #menu,#c-banner #menu{ background-position: center top;
+    margin: 0 5px 0 auto;
+    padding: 16px 10px 10px 0;
+	  list-style: outside none none;
+	  color:#fff;
+}
+.c-widget {
+    overflow: hidden;
+}
+.c-banner .c-menu-item,#c-banner #c-menu-item{display:inline-block;}
+#c-menu-item a{    padding: 5px 20px;
+    text-decoration: none;}
+.c-page-btn{display:inline-block;width:auto;padding:0 5 0 5;height:20px;font-size:14px;line-height:20px;text-align:center;margin-top: 10px !important;margin-right:15px !important;border-radius:0px !important;}

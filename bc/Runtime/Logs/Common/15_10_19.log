@@ -1,0 +1,150 @@
+[ 2015-10-19T14:12:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-10-19T14:12:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-10-19T14:13:09+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f26d4bdd3f1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T14:13:09+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f248233c920.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T14:20:38+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f248233c920.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T14:20:38+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f26d4bdd3f1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T16:46:59+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-10-19T16:47:00+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-10-19T16:49:22+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T16:49:22+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004246s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T16:54:02+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T16:54:02+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T16:54:02+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T16:54:02+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T16:54:04+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f26d4bdd3f1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T16:54:04+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f248233c920.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T16:54:32+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f26d4bdd3f1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T16:54:32+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f248233c920.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T17:03:00+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b895dd75f26.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T17:03:00+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150729/55b896497b5e6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T17:03:11+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T17:03:11+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T17:03:11+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-10-19T17:03:14+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f248233c920.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+ERR: 无法加载模块:ThinkPHP
+
+[ 2015-10-19T17:03:14+08:00 ] 127.0.0.1 /ThinkPHP/Public/Uploads/20150911/55f26d4bdd3f1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+ERR: 无法加载模块:ThinkPHP
+

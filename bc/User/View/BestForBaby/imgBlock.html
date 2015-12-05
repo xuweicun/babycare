@@ -1,0 +1,18 @@
+
+<foreach name="imgs" item="t">
+      <div class="col-sm-6 col-md-3">
+
+              <div class="thumbnail thumbnail-warning" >
+                <img data-src="{$t.thumb_img}" src="{$t.viewimg}" alt="image not found">
+                <div class="caption">
+                  <h5>{$t.name|default='name not found'}</h5>
+                  <p>{$t.company}{$t.brand}</p>
+                  <p><a role="button" class="btn btn-primary btn-block" href="__CONTROLLER__/viewitem/id/{$t.id}">详情</a>
+                   <a role="button" class="btn btn-info btn-block" href="__CONTROLLER__/edititem/id/{$t.id}">编辑</a>
+                 <a role="button" class="btn btn-default btn-block" href="__CONTROLLER__/deleteitem/id/{$t.id}">删除</a>
+               </p>
+                </div>
+              </div>
+            </div>
+</foreach>
+

@@ -1,0 +1,24 @@
+[ 2015-08-18T17:30:06+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-18T17:30:06+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-18T17:30:06+08:00 ] 127.0.0.1 /Publicassets/script/lhgdialog/lhgdialog.js?skin=idialog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+ERR: 无法加载模块:Publicassets
+
+[ 2015-08-18T17:30:06+08:00 ] 127.0.0.1 /Publicassets/script/layout.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+ERR: 无法加载模块:Publicassets
+

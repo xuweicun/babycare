@@ -1,0 +1,13 @@
+<html><head></head>
+<body>
+ <a href="__MODULE__/bestforbaby">返回首页</a>
+<empty name = "items">
+没有找到商品
+</empty>
+<foreach name="items" item="t">
+<a href="__CONTROLLER__/viewitem/id/{$t.id}">{$t.corp|stripslashes} {$t.brand|stripslashes} {$t.category|stripslashes}</a>
+<p>{$t.brand}</p>
+</foreach>
+{$page}
+</body>
+ </html>

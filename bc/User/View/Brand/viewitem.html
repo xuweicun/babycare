@@ -1,0 +1,23 @@
+<html><head></head>
+<body>
+<a href="__CONTROLLER__/">首页</a>
+{$item.name}
+
+{$item.corp}
+
+
+<br/>
+<img src="{$item.img}" alt="{$item.name}"/>
+<foreach name="instructions" item="t">
+<div>
+<p>{$t.title}</p>
+<p>{$t.content}</p>
+<a href="__CONTROLLER__/editInstruction/id/{$t.id}">修改</a>
+<a href="__CONTROLLER__/deleteInstruction/id/{$t.id}">删除</a>
+</div>
+</foreach>
+<a href="__CONTROLLER__/addInstruction/id/{$item.id}">增加说明</a>
+<a href="__CONTROLLER__/edititem/id/{$item.id}">编辑</a>
+<a href="__CONTROLLER__/insertitem/brand_id/{$item.id}">增加物品</a>
+</body>
+</html>

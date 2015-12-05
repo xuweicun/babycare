@@ -1,0 +1,48 @@
+<include file="Public/flatui-head"/>
+<body>
+<a href="__CONTROLLER__/">管理首页</a>
+名称：{$item.name}<br>
+<p class="help-block">
+<a href="__CONTROLLER__/deleteitem/id/{$item.id}">删除分类</a>
+</p>
+<br/>
+<notempty name="father">
+上级目录：{$father.name}
+<br/>
+<else />
+<lt name="item.layer" value="2">
+<a href="__CONTROLLER__/insertitem/layer/{$item.layer+1}">增加上级目录</a>
+<br/>
+</lt>
+</notempty>
+   <gt name="item.layer" value="0">
+	<div class="well">
+		<div class="row">
+			<h3>下级目录</h3>
+			<p class="help-block">
+			<a href="__CONTROLLER__/insertitem/fatherID/{$item.id}/layer/{$item['layer']-1}">增加下级目录</a>			</p>
+			<notempty name="children">
+				<volist name="children" id="t">					
+					<a href="__CONTROLLER__/viewitem/id/{$t.id}">{$t.name}</a>&nbsp;					
+				</volist>
+			<else/>
+
+			<p>没有下一级目录</p>
+			</notempty>
+		</div>
+	</div>
+	</gt>
+<foreach name="instructions" item="t">
+<div>
+<p>{$item.name}</p>
+<p>{$item.alias}</p>
+<a href="__CONTROLLER__/editInstruction/id/{$t.id}">修改</a>
+<a href="__CONTROLLER__/deleteInstruction/id/{$t.id}">删除</a>
+</div>
+</foreach>
+<a href="__CONTROLLER__/addInstruction/id/{$item.id}">增加说明</a>
+<a href="__CONTROLLER__/edititem/id/{$item.id}">编辑</a>
+<include file="Public/flatui-tail"/>
+
+</body>
+</html>

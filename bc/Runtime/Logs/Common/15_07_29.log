@@ -1,0 +1,30 @@
+[ 2015-07-29T06:18:12+08:00 ] 127.0.0.1 /index.php/dist/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+ERR: 无法加载模块:Dist
+
+[ 2015-07-29T06:18:13+08:00 ] 127.0.0.1 /index.php/dist/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+ERR: 无法加载模块:Dist
+
+[ 2015-07-29T20:06:29+08:00 ] 127.0.0.1 /index.php/dist/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+ERR: 无法加载模块:Dist
+
+[ 2015-07-29T20:06:29+08:00 ] 127.0.0.1 /index.php/dist/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001378s ]
+ERR: 无法加载模块:Dist
+
+[ 2015-07-29T20:06:42+08:00 ] ::1 /index.php/dist/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+ERR: 无法加载模块:Dist
+

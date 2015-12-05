@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<script type="text/javascript" src="/Public/js/jquery-1.6.4.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/Public/js/onload.js" charset="utf-8"></script>
+
+<body>
+<a href="__MODULE__/bestforbaby/insertitem">增加项目</a> <a href="__MODULE__/bestforbaby/viewitems">查看所有项目</a>
+<form action="__MODULE__/bestforbaby/searchitem" method="post">
+  <input name="key" placeholder="二维码/名称/品牌/厂商"/>
+  <button type="submit">查询</button>
+  <br/>
+</form>
+<!--根据类别搜索-->
+<div name="search-by-ctgr">
+  <label for"top_layer">根据类别选择</label>
+  <select name="top_layer" id="top_layer">
+    <option value="">一级类目</option>
+    <foreach name="layer_top" item="t">
+      <option value="{$t.id}" onClick="javascript:ajaxListChildren(this,'__MODULE__/Category/listChildren/father_id/{$t.id}');">{$t.name}</option>
+    </foreach>
+    <option value="0" onClick="ajaxListChildren(this,'__MODULE__/Category/listChildren/layer/1');">其他</option>
+  </select>
+  <select name="mid_layer" id="mid_layer">
+  <option value="">二级类目</option>
+  </select>
+  <div id="btm_layer">名称</div>
+</div>
+</body>
+</html>

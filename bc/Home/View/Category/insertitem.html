@@ -1,0 +1,88 @@
+<include file="Public/flatui-head" />
+</head>
+<body>
+
+
+<div class="container">
+    
+
+<!--展示已有内容-->
+<a href="__CONTROLLER__/">首页</a> <a href="javascript:toggleElement('container')">查看所有同级物品</a> 
+<div class="btn-group">
+   <button type="button" class="btn btn-default btn-sm dropdown-toggle" 
+      data-toggle="dropdown">
+      重新选择级别 <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu" role="menu">
+      <li><a href="__CONTROLLER__/insertitem/layer/2">插入根目录</a></li>
+      <li><a href="__CONTROLLER__/insertitem/layer/1">插入二级目录</a></li>
+      <li><a href="__CONTROLLER__/insertitem/layer/0">插入三级目录</a></li>
+      <li><a href="#">分离的链接</a></li>
+   </ul>
+</div>
+
+<table id="container" style="display: none;" class="table">  
+<caption>所有同级物品</caption>
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+    <foreach name="items" item="t">
+        <tr>
+            
+            <td>{$t.name}</td>
+            <td><a href="__CONTROLLER__/viewitem/id/{$t.id}">查看</a> <a href="__CONTROLLER__/edititem/id/{$t.id}">编辑</a></td>
+            
+        </tr>
+        </foreach>
+    </tbody>
+</table>
+
+ 
+
+<form action="__CONTROLLER__/insertitem" method="post">
+    <input name="name" placeholder="类目名称"/>
+    <br/>
+    <lt name="layer" value="2">
+    <select name="father_id">
+        <option value="0">选择上级</option>
+        <foreach name="father" item="t">
+            <notempty name="fatherID">
+                <eq name="t.id" value="$fatherID">
+                <option value="{$t.id}" selected>{$t.name}</option>
+                <else />
+                <option value="{$t.id}" >{$t.name}</option>
+                </eq>
+            <else/>
+            <option value="{$t.id}">{$t.name}</option>
+        </notempty>
+        </foreach>
+    </select>
+	<a href="__CONTROLLER__/insertitem/layer/{$layer+1}">增加新的上级目录</a> 
+    <br/>
+    </lt>  
+    <input name="layer" value="{$layer}" style="display:none"/>
+    <input type="submit" value="增加"/>
+</form>
+<eq name="layer" value = "0">
+<else/>
+<a href="__CONTROLLER__/insertitem/layer/0">插入品名</a>
+<br/>
+</eq>
+<neq name="layer" value = "1">
+<a href="__CONTROLLER__/insertitem/layer/1">插入类目</a>
+</neq>
+<br/>
+</div>
+<script src="/Public/js/jquery-1.6.4.min.js" charset="utf-8"></script> 
+<script type="text/javascript" src="/Public/js/onload.js"></script> 
+<script  type="text/javascript">
+
+</script> 
+
+<include file="Public/flatui-tail" />
+</body>
+ </html>

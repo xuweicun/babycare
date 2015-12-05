@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台框架</title>
+
+<script type="text/javascript" src="/Public/js/jquery-1.6.4.min.js" charset="utf-8"></script>
+
+<script language="javascript">
+function colorOptionChange(input,item_id,color_id)
+{
+	var $this = $(input);
+	var url;
+	
+	var data = {action:"insert",item_id:item_id,option_id:color_id};
+	if($this.val() != "选择")
+	{
+		//该项被选择
+		data['action'] = "delete";
+	}	
+	var param = $.param(data);
+	url = "/index.php/home/option/modifyColorOption";
+	
+		$.ajax({ 
+		type: "post", //以post方式与后台沟通
+		data:param,
+		url: url,//"/index.php/Home/Category/listChildren/layer/1",, //与此php页面沟通
+		dataType:'json',//从php返回的值以 JSON方式 解释
+		//data: param, //发给php的数据有两项，分别是上面传来的u和p
+		success: function(json){
+				
+				if(json['result'] == "success")
+				{
+					alert("操作成功");
+					if($this.val() != "取消")
+					$this.val("取消");
+					else
+					$this.val("选择");
+				}
+				else
+				{
+					
+					alert("操作失败");
+					
+				}
+				
+			},
+		fail:function(){}
+		});
+	
+	
+		
+}
+
+$(document).ready(function()
+{
+	
+ }  
+   
+);
+</script>
+</head>
+<body>
+<a href="__CONTROLLER__/">首页</a>
+<br/>
+<foreach name="color_options" item="t">
+<eq name="t['selected']" value="1">
+<input type="button" name="color_options[]" value="取消" onclick="javascript:colorOptionChange(this,{$item_id},{$t.id});"/>
+<else/>
+<input type="button" name="color_options[]" value="选择" 
+onclick="javascript:colorOptionChange(this,{$item_id},{$t.id});"/>
+</eq>
+{$t.title}
+<br/>
+</foreach>
+<a href="__CONTROLLER__/editSizeOptions/item_id/{$item_id}">规格</a>
+</body>
+</html>

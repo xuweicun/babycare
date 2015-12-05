@@ -1,0 +1,53 @@
+    <style>
+      body {
+        min-height: 2000px;
+        padding-top: 70px;
+      }
+    </style>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="__MODULE__">首页 <span class="glyphicon glyphicon-home"></span></a></li>
+            <!--<li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>-->
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> 分类<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <foreach name="category" item="t">
+                  <li><a href="__CONTROLLER__/viewbyctgr/ctgr_id/{$t.id}">{$t.name}</a></li>
+                </foreach>              
+              </ul>
+            </li>
+          </ul> 
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fui-user"></span> 我的账户 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="fui-gear"></span> 账户设置</a></li>
+                <li><a href="#"><span class="fui-list"></span> 订单</a></li>
+                <li><a href="#"><span class="fui-tag"></span> 收藏夹</a></li>
+                <li class="divider"></li>
+                <li><a href="#">登录 <span class="fui-login"></span></a></li>
+                <li><a href="#">注销 <span class="fui-logout"></span></a></li>
+              </ul>
+            </li>           
+         </ul>
+          <div id="bs-example-navbar-collapse-2" class="collapse navbar-collapse">
+            <form class="navbar-form navbar-left" method="post" action="__CONTROLLER__/searchitem" role="search">
+              <div class="form-group">
+                <input class="form-control" name="key" type="text" size="50" placeholder="名称/用途/品牌...">
+              </div>
+              <button class="btn btn-danger" type="submit">搜索 <span class="glyphicon glyphicon-search"></span></button>
+            </form>
+          </div>
+       </div><!--/.nav-collapse --> 
+      </div>
+    </div>
+

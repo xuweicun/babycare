@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE HTML>
+<html manifest="msj_m.manifest">        
+<meta charset="gb2312">
+<title>码农私厨</title>
+
+
+
+
+<body>
+<a href="__MODULE__/bestforbaby">首页</a>
+<form method="post" action="__CONTROLLER__/{$action}" name="f1" enctype="multipart/form-data">
+<input name="name" placeholder="名称" value="{$item.name|default=''}"/>
+<input name="cn_name" placeholder="中文名" value="{$item.cn_name|default=''}"/>
+<select name="corp_id">
+    <option>选择厂商</option>
+    <foreach name="companies" item="t">
+      <option value="{$t.id}"  onClick="listChildren({$t.id},'brand_id','new_brand');hideElement('new_corp')">{$t.name}</option>
+    </foreach>
+    <option onClick="javascript:showElement('new_corp');hideElement('old_brand');removeElement('brand_id');" >其他</option>
+</select>
+  <br/>
+<a href="__MODULE__/company/insertitem">首页</a>
+ <script id="container" name="description" type="text/plain">
+        {$item.description}
+ </script>
+<button type="submit">提交</button>
+
+</form>
+ <!-- 加载编辑器的容器 -->
+   <script src="/js/jquery-1.6.4.min.js"></script>    
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+
+
+</body>
+ </html>

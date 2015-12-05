@@ -1,0 +1,48 @@
+<include file="Public/flatui-head"/>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="well">
+			<div class="row">
+				<a href="__CONTROLLER__/insertitem/layer/2">插入</a>根目录
+			</div>
+			<div class="row">
+				<volist name="items" id="t">
+					<eq name="t.layer" value="2">
+					<a href="__CONTROLLER__/viewitem/id/{$t.id}">{$t.name}</a>&nbsp;
+					</eq>
+				</volist>
+			</div>
+		</div>
+		<div class="well">
+			<div class="row">
+				<a href="__CONTROLLER__/insertitem/layer/1">插入</a>二级目录
+			</div>
+			<div class="row">
+				<volist name="items" id="t">
+					<eq name="t.layer" value="1">
+					<a href="__CONTROLLER__/viewitem/id/{$t.id}">{$t.name}</a>&nbsp;
+					</eq>
+				</volist>
+			</div>
+		</div>
+		<div class="well">
+			<div class="row">
+				<a href="__CONTROLLER__/insertitem/layer/0">插入</a>产品
+			</div>
+			<div class="row">
+				<volist name="items" id="t">
+					<eq name="t.layer" value="0">
+					<a href="__CONTROLLER__/viewitem/id/{$t.id}">{$t.name}</a>&nbsp;
+					</eq>
+				</volist>
+			</div>
+		</div>
+	</div>
+
+
+<include file="Public/flatui-tail"/>
+
+</body>
+ </html>

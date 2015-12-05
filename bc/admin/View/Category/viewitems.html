@@ -1,0 +1,13 @@
+<html><head></head>
+<body>
+<a href="__CONTROLLER__/">首页</a>
+<foreach name="items" item="t">
+<a href="__CONTROLLER__/viewitem/id/{$t.id}">{$t.name}</a><p></p>{$t.function}<p></p><p><a href="__CONTROLLER__/deleteitem/id/{$t.id}">删除</a></p>
+</foreach>
+<form action="searchitem" method="post">
+<input name="key" placeholder="二维码or name"/>
+<button type="submit">查询</button>
+</form>
+{$page}
+</body>
+ </html>

@@ -1,0 +1,77 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE HTML>
+ 
+<meta charset="gb2312">
+<title>码农私厨</title>
+
+
+
+
+<body>
+
+    <div class="c-home">
+        <a href="__MODULE__/bestforbaby/index">回首页</a>
+        <a href="__MODULE__/bestforbaby/viewitem/id/{$item.id}">查看物品</a>
+    </div>
+    
+    <foreach name="items" item="t">
+        <div>
+        <a href="__MODULE__/bestforbaby/viewInstruction/id/{$t.id}">{$t.title}</a>
+        <a href="__CONTROLLER__/deleteitem/id/{$t.id}">删除</a>
+        </div>
+    </foreach>
+
+    <form method="post" action="__CONTROLLER__/{$action}" name="f1" enctype="multipart/form-data">
+        <notempty name="item">
+        <input name="item_id" value="{$item.item_id}" style="display:none;"/>
+        <input name="id" value="{$item.id}" style="display:none;"/>
+        </notempty>
+        <select name="title_id">
+	        <option>选择题目</option>
+            <notempty name="item">
+                <option value="{$item.title_id}" selected>{$item.title}</option><!--说明ID-->
+            </notempty>
+            <foreach name="title" item="t"> 
+
+                <option value="{$t.id}" onClick="getByTitle({$t.id},{$item_id});">{$t.title}</option>
+            </foreach>
+        </select>
+        <a href="__CONTROLLER__/inserttitle">增加标题</a> 
+        <script id="container" name="content" type="text/plain">
+        <notempty name="item">
+                {$item.content|htmlspecialchars_decode}
+        </notempty>
+        </script>
+        <button type="submit">提交</button>
+    
+    </form>
+ <!-- 加载编辑器的容器 -->
+    <script src="/Public/js/jquery-1.6.4.min.js"></script>    
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+   </script>
+   <script type="text/javascript">
+		var getByTitle = function(title_id,item_id)
+		{
+			//var info = new array();
+			//var param = $.param(info);
+			$.ajax({ 
+				type: "post", //以post方式与后台沟通
+				url: "__MODULE__/instruction/getByTitle/title_id/"+title_id+"/item_id/"+item_id, //与此php页面沟通
+				dataType:'json',//从php返回的值以 JSON方式 解释
+			//	data: param, //发给php的数据有两项，分别是上面传来的u和p
+				success: function(json){
+					
+					},
+				fail:function(){}
+				}); 
+		}
+</script>
+
+</body>
+ </html>

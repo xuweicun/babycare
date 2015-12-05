@@ -1,0 +1,7 @@
+<select name="{$name}" id="{$name}">
+<option>{$text}</option>
+<foreach name="items" item="t">
+<option value="{$t.id}">{$t.title}</option>
+</foreach>
+<option value="0">其他</option>
+</select>

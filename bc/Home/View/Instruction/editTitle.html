@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE HTML>
+
+<meta charset="gb2312">
+<title>编辑</title>
+
+
+<body>
+<a href="__MODULE__/">首页</a>
+  <foreach name="items" item="t">
+  <a href="__CONTROLLER__/editTitle/id/{$t.id}">{$t.title}</a>
+  <br/>
+  </foreach>
+<form method="post" action="__CONTROLLER__/{$action}" name="f1" enctype="multipart/form-data">
+<input name="title" placeholder="名称" value="{$item.title}"/>
+<input name="id" style="display:none;" value="{$item.id}"/>
+  <br/>
+
+<button type="submit">提交</button>
+
+</form>
+ <!-- 加载编辑器的容器 -->
+   <script src="/js/jquery-1.6.4.min.js"></script>    
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+   
+
+</body>
+ </html>

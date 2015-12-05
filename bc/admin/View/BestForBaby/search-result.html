@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Loading Bootstrap -->
+    <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Loading Flat UI -->
+    <link href="/Public/css/flat-ui.css" rel="stylesheet">
+    <link href="/Public/css/custom.css" rel="stylesheet">
+ 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="../../dist/js/vendor/html5shiv.js"></script>
+      <script src="../../dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <style>
+      body {
+        min-height: 2000px;
+        padding-top: 70px;
+      }
+      div.thumbnail img{
+        
+        min-width: 50%;
+        height:300px;
+      }
+    </style>
+    <include file="Public/flatui-navbar"/>
+
+    <div class="container-fluid">
+      
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+          
+          <div class="well">
+            搜索关键词：<span class="label label-success"><?php echo $_POST['key'];?>  <a href="__MODULE__"><span class="glyphicon glyphicon-trash" style="color:white;"></span></a></span> 
+            
+          </div>
+          <empty name="items">
+          <div class="alert alert-warning">
+            <span class="glyphicon glyphicon-exclamation-sign"></span> 对不起，没有搜索结果，请检查您的搜索关键词...
+          </div>
+          </empty>
+          <div class="row">
+           
+            <foreach name="items" item="t">
+            <div class="col-sm-6 col-md-3">
+
+              <div class="thumbnail thumbnail-alert">
+                <img data-src="{$t.thumb_img}" src="{$t.img}" alt="image not found">
+                <div class="caption">
+                  <h5>{$t.name|default='name not found'}</h5>
+                  <p>{$t.company}{$t.brand}</p>
+                  <p><a role="button" class="btn btn-primary btn-block" href="__CONTROLLER__/viewitem/id/{$t.id}">详情</a>
+                   <a role="button" class="btn btn-info btn-block" href="__CONTROLLER__/edititem/id/{$t.id}">编辑</a>
+                 <a role="button" class="btn btn-default btn-block" href="__CONTROLLER__/deleteitem/id/{$t.id}">删除</a>
+               </p>
+                </div>
+              </div>
+            </div>
+          </foreach>
+          </div>
+          {$page}
+           
+
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/Public/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/Public/js/bootstrap.min.js"></script>
+    <script src="/Public/js/flat-ui.min.js"></script>
+
+    <script src="/Public/js/application.js"></script>
+    <script type="text/javascript">
+        //$('#modal').modal({keyboard:true});
+    </script>
+
+  </body>
+</html>

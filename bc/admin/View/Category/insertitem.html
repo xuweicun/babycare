@@ -1,0 +1,52 @@
+<html>
+
+<head>
+</head>
+<body>
+
+<a href="__CONTROLLER__/">首页</a>
+<!--展示已有内容-->
+<a href="javascript:toggleElement('container')">查看所有同级物品</a> 
+<div id="container" style="display:none;background-color:#d6b;color:white;">
+<foreach name="items" item="t">
+          {$t.name} <a href="__CONTROLLER__/viewitem/id/{$t.id}">查看</a> <a href="__CONTROLLER__/edititem/id/{$t.id}">编辑</a>
+          <br/>
+ </foreach>    
+</div>
+ 
+
+<form action="__CONTROLLER__/insertitem" method="post">
+    <input name="name" placeholder="类目名称"/>
+    <br/>
+    <lt name="layer" value="2">
+    <select name="father_id">
+        <option value="0">选择上级</option>
+        <foreach name="father" item="t">
+        <option value="{$t.id}">{$t.name}</option>
+        </foreach>
+    </select>
+	<a href="__CONTROLLER__/insertitem/layer/{$layer+1}">增加新的上级目录</a> 
+    <br/>
+    </lt>  
+    <input name="layer" value="{$layer}" style="display:none"/>
+    <input type="submit" value="增加"/>
+</form>
+<eq name="layer" value = "0">
+<else/>
+<a href="__CONTROLLER__/insertitem/layer/0">插入品名</a>
+<br/>
+</eq>
+<neq name="layer" value = "1">
+<a href="__CONTROLLER__/insertitem/layer/1">插入类目</a>
+</neq>
+<br/>
+
+<script src="/Public/js/jquery-1.6.4.min.js" charset="utf-8"></script> 
+<script type="text/javascript" src="/Public/js/onload.js"></script> 
+<script  type="text/javascript">
+
+</script> 
+
+
+</body>
+ </html>

@@ -1,0 +1,32 @@
+<html><head></head>
+<body>
+<a href="__CONTROLLER__/">首页</a>
+<form action="__CONTROLLER__/edititem" method="post">
+    <input name="id" value="{$item.id}" style="display:none"/>
+    <input name="name" placeholder="name" value="{$item.name}"/>
+<br/>
+    <notempty name="fathers">
+    <select name="father_id">
+    
+        <notempty name="father">
+        <option value="{$father.id}">{$father.name}</option>
+        <else/>
+        <option>选择上层</option>
+        </notempty>
+    	
+        <foreach name="fathers" item="t">
+        <option value="{$t.id}">{$t.name}</option>
+        </foreach>
+    
+    </select>
+    </notempty>    
+    <br/>
+    <input name="new_father" placeholder="新的上级目录"/>  
+    <br/>
+    <input type="submit" value="保存"/>
+</form>
+
+<a href="__CONTROLLER__/deleteitem/id/{$item.id}">删除</a>
+
+</body>
+ </html>

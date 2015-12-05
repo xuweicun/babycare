@@ -1,0 +1,27 @@
+<html><head></head>
+<body>
+<a href="__CONTROLLER__/">首页</a>
+名称：{$item.name}<br>
+<br/>
+<notempty name="father">
+上级目录：{$father.name}
+<br/>
+<else>
+<a href="__CONTROLLER__/insertfather/id/{$item.id}/layer/{$item.layer}">增加上级目录</a>
+<br/>
+</notempty>
+
+
+<foreach name="instructions" item="t">
+<div>
+<p>{$item.name}</p>
+<p>{$item.alias}</p>
+<a href="__CONTROLLER__/editInstruction/id/{$t.id}">修改</a>
+<a href="__CONTROLLER__/deleteInstruction/id/{$t.id}">删除</a>
+</div>
+</foreach>
+<a href="__CONTROLLER__/addInstruction/id/{$item.id}">增加说明</a>
+<a href="__CONTROLLER__/edititem/id/{$item.id}">编辑</a>
+
+</body>
+</html>

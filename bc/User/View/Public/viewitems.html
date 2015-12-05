@@ -1,0 +1,31 @@
+
+ <include file="Public/common-head"/>
+<body>
+<div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          
+          <div class="row">
+           <div class="col-sm-12 col-md-12">
+            <volist name="items" id="t">            
+             <p><a href="__CONTROLLER__/edititem/id/{$t.id}">{$t.name}({$t.cn_name|default="中文名称未指定"})</a>|<a href="__CONTROLLER__/deleteitem/id/{$t.id}">删除</a></p> 
+            </volist>
+            <empty name="items">
+            	<h4>暂无数据</h4>
+            </empty>
+          </div>
+          
+          </div>
+          {$page}
+     
+    </div>	
+</div>
+</div>
+<form action="__CONTROLLER__/searchitem" class="form-inline" method="post" role="search">
+<input name="key" placeholder="名称"/>
+<button type="submit">查询</button>
+</form>
+
+<include file="Public/flatui-tail"/>
+</body>
+ </html>

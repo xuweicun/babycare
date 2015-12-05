@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+       <!-- Loading Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="/Public/css/validationEngine.jquery.css">
+       <!-- Loading Bootstrap -->
+    <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="/Public/css/flat-ui.css" rel="stylesheet">
+    <!-- Loading Validation Engine -->
+
+<title>{$title|default="BABYCARE"}</title>
+</head>
+<body>
+<div id="layout-container"  style="height:auto;" class="container">
+ <div class="row">
+        <div class="col-md-12">
+          <ul class="breadcrumb">
+            <li><a href="__CONTROLLER__">物品管理<span class="glyphicon glyphicon-tag"></span></a>
+              <span class="divider">&raquo;</span></li>
+            <li><a>增加物品</a></li>
+          </ul>
+          <form class="form-horizontal" name="form1" id="form" role="form" method="post" action="__CONTROLLER__/{$action}" enctype="multipart/form-data">
+            <div class="form-group">
+              <label class="col-md-2 col-lg-2 control-label">品牌</label>
+              <div class="col-md-10 col-lg-10">
+                <p class="form-control-static"> {$brand.cn_name|stripslashes}({$brand.name|stripslashes}) from {$brand.corp_name|stripslashes}</p>
+                <p class="help-block">如需更改品牌，请<a href="__CONTROLLER__/{$action}">重新选择</a></p>
+              </div>
+            </div>
+            <div class="form-group" style="display:none;">
+              <label class="col-md-2 col-lg-2 control-label">品牌ID</label>
+              <div class="col-md-10 col-lg-10">
+                  <input name="brand_id" value="{$brand.id}"/>
+              </div>
+            </div>
+            <switch name="action">
+                <case value="insertitem"><div class="form-group"></case>
+                <case value="edititem"><div class="form-group" id="ctgrZone" style="display:none;"></case>
+                <default/><div class="form-group">
+            </switch>
+              <label class="col-md-2 col-lg-2 control-label">选择类别</label>
+              <div class="col-md-10 col-lg-10">
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="select-btn1">选择类别 <span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu">
+                    <foreach name="category" item="t">
+                    <li>
+                      <empty name="t.category_id">
+                      <a onClick="javascript:selectDropDown(this,'{$t.name}','select-btn1');ajaxListChildren('ctgr-select','{$ctgrURL}'+{$t.id});">{$t['name']}</a></li>
+                      <else/>
+                      <a onClick="javascript:selectDropDown(this,'{$t.name}','select-btn1');ajaxListChildren('ctgr-select','{$ctgrURL}'+{$t.category_id});">{$t['name']}</a></li>
+                    </empty>
+                    <!--<li><a onClick="javascript:toggleElement('title');">{$t['name']}</a></li>-->
+                    </foreach>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div><!-- /btn-group -->
+              </div>
+            </div>
+                             
+            <div class="form-group">
+            
+              <label class="col-md-2 col-lg-2 control-label">类别</label>
+              <div class="col-md-10 col-lg-10">
+                <select class="form-control select select-info mrs mbm" id="ctgr-select" name="category_id" data-toggle="select" name="inverse-dropdown-searchfield">
+                    <option>选择</option>
+                </select>  
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="name" class="col-lg-2 control-label">名称</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control tagsinput validate[required]" id="name" placeholder="名称" name="name" value="{$brand.cn_name|stripslashes}, {$brand.name|stripslashes}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="version" class="col-lg-2 control-label">版本</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="version" placeholder="版本" name="version">
+                <p class="help"><notempty name="existingVersion">已有版本：
+                  <foreach name="existingVersion" item="t">
+                    <a href="__CONTROLLER__/viewitem/id/{$t.id}" class="btn btn-mini btn-alert" type="button">{$t.version|default="默认版本"}</a> 
+                  </foreach>
+                </notempty></p>
+              </div>
+
+            </div>
+             <div class="form-group">
+              <label for="start_age" class="col-lg-2 control-label">最小使用月龄</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="version" placeholder="最小" name="start_age">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="end_age" class="col-lg-2 control-label">最大使用月龄</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="end_age" placeholder="最大" name="end_age">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="life" class="col-lg-2 control-label">保质期或使用期限</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="life" placeholder="保质期或最佳使用期限描述" name="life">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="video" class="col-lg-2 control-label">安装视频</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="video" placeholder="输入视频的链接" name="video">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="video" class="col-lg-2 control-label">购买链接</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="buyLink" placeholder="输入商品的店铺链接" name="buyLink">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="barcode" class="col-lg-2 control-label">条形码</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="barcode" placeholder="条形码或识别码" name="barcode">
+              </div>
+            </div>
+             <div class="form-group">
+               <label for="img" class="col-lg-2 control-label">图片</label>
+               <div class="input-group col-lg-10" id="img">
+                  
+                  <input name="img" type="text"  placeholder="图片路径" value="{$item.img}" class="form-control" style="display:none"/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick="window.open('__CONTROLLER__/innerupload/formname/form1/editname/img','图片上传','left=300px,height=400,width=500');">上传图片</button>
+                  </span>
+               </div><!-- /input-group -->
+             </div>
+             <div class="form-group">
+                <input name="thumb_img" type="text" id="thumb_img" value="{$item.thumb_img}" size="50" class="c-hidden" style="display:none"/> 
+              </div>
+              <div class="form-group"> 
+                <label for="container" class="col-lg-2 control-label">描述</label>
+                <div class="col-lg-10">
+                  <script id="container" name="instruction" type="text/plain">
+                    {$item.instruction}
+                  </script>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-block btn-primary">提交表单</button>
+      
+      
+          </form>
+        </div><!-- /.lg-col-12 -->
+      </div><!-- /.row -->
+ 
+    
+    <!-- 加载编辑器的容器 --> 
+    
+    <!-- 配置文件 --> 
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script> 
+    <!-- 编辑器源码文件 --> 
+    <script type="text/javascript" src="/Public/js/ueditor.all.js"></script> 
+    <!-- 实例化编辑器 --> 
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+   <script src="/Public/js/jquery.js"></script>    
+   <script src="/Public/js/onload.js"></script> 
+   <script type="text/javascript">    
+   var selectDropDown = function(selectedID,name,titleID)
+    {
+        
+        var $target = $(selectedID);
+        $("#"+titleID).html(name+"<span class='caret'></span>");
+        $target.parent().children().each(function()
+            {
+                $(this).removeClass("active");
+            }    
+        );     
+        $target.addClass("active");   
+    }
+    </script>  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/Public/js/flat-ui.min.js"></script>
+
+    <script src="/Public/js/application.js"></script> 
+   
+   <script src="/Public/js/jquery.validationEngine.js"></script> 
+   
+       <script src="/Public/js/jquery.validationEngine-zh_CN.js"></script>  
+
+
+    <!-- 配置文件 -->
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+       
+        $('#form').validationEngine(); 
+        
+        $('#form-id').validationEngine('attach', { 
+        promptPosition: 'centerRight', 
+        scroll: false,
+       // ajaxFormValidation:true,
+       ajaxFormValidationMethod:'post',
+       // OnAjaxFormComplete:'ajaxFormValidationCallback'
+       
+      
+          }); 
+
+    </script>
+
+    <script>
+      $(document).ready(function(){
+      
+        $('select').select2({dropdownCssClass: 'select-inverse-dropdown show-select-search'});
+      });
+       $('input.tagsinput').tagsinput();
+
+    </script>
+
+<!--container-->
+<div>
+</body>
+</html>

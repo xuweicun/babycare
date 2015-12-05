@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+       <!-- Loading Bootstrap -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+       <!-- Loading Bootstrap -->
+    
+    <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    
+    <link href="/Public/css/flat-ui.css" rel="stylesheet">
+    <link href="/Public/css/custom.css" rel="stylesheet">
+
+	<title>物品详情</title>
+  </head>
+<body>
+<include file="Public/flatui-navbar"/>
+<!--图像区-->
+
+
+<div class="container">
+        <div class="row">
+        	<div class="col-sm-12 col-md-6" id="itemImg">
+            <div class='alert alert-warning pre-hidden' id="noImg"><a data-dismiss='alert' class='close' href='#alert'>x</a><p>暂时没有图像</p></div>
+            <notempty name="itemViewImg">
+            <div id="carousel-example-generic" style="width:100%;height:100%;margin:auto;z-index:2;" class="carousel slide" data-ride="carousel" data-keyboard="true">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" id="galleryIndex">
+              <volist name="itemViewImg" id="t">
+              <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+              </volist>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="width:100%;height:100%;margin:auto;" role="listbox" id="galleryContent">
+              <volist name="itemViewImg" id="t">
+              <div class="item" style="width:90%;max-width:500px;height:100%;overflow: hidden;">
+                <img src="{$t.viewimg}" style="display:inline-block;width:500px;height:400px;" alt="">
+              </div>
+              </volist> 
+            </div>
+          </div>
+          <else/> 
+            
+          <img src="{$item.img}" alt="{$item.name}coco-babycare" style="width:500px;height:400px;"/>  
+              
+        </notempty>
+        <notempty name="itemView">
+                    <div class="row" style="font-size:14px;width: 90%;margin: auto; margin-top: 10px;">
+                      <div class="col-sm-2 col-md-2">
+                        <p class="form-control-static" style="font-size:14px;">样式</p>
+                      </div>
+                    <notempty name="selectedView">
+                      <div class="col-sm-10 col-md-10 btn-toolbar" role="toolbar" id="itemView">
+                          <volist name="itemView" id="t">
+                                <eq name="t['id']" value="$selectedView">
+                                  <button class="btn btn-success selectgroup active" onclick="getViewGallery({$item.id},{$t.id});">{$t.view}
+                                  <span class="glyphicon glyphicon-check"></span></button>
+                                  <else/>
+                                  <button class="btn btn-success selectgroup" onclick="getViewGallery({$item.id},{$t.id});">{$t.view}</button> 
+                                </eq>
+                          </volist>                        
+                      </div>
+                    </notempty>
+                    </div> 
+                    </notempty>
+  <!-- Controls -->
+        	</div>
+          
+      
+        	<div class="col-sm-12 col-md-6">
+        		
+           
+              <div class="row alert alert-success">
+                <h4>{$item.name} <span class="glyphicon glyphicon-gift"></span></h4>
+                <span class="label label-warning">{$brand.cn_name|stripslashes}({$brand.name|stripslashes}) <span class="badge badge-info">{$item.version}</span></span> 
+                by <span class="label label-info">{$brand.corp_name|stripslashes}</span>
+                <p class="help-block"><a href="__CONTROLLER__/edititem/id/{$item.id}">修改基本信息 <span class="glyphicon glyphicon-pencil"></span></a>|<a href="__CONTROLLER__/insertView/id/{$item.id}">新增外观 <span class="glyphicon glyphicon-leaf"></span></a>|<a href="__CONTROLLER__/insertSize/id/{$item.id}">新增规格 <span class="glyphicon glyphicon-edit"></span></a>|<a href="__CONTROLLER__/insertImg/item_id/{$item.id}">新增图片 <span class="glyphicon glyphicon-edit"></span></a></p> 
+              </div>
+                    
+              
+                    <div class="row well" style="font-size:14px;margin-bottom:5px;">
+                      <div class="col-sm-2 col-md-2">
+                        <span style="font-size:14px;">用户评价</span>
+                      </div>
+                      <div class="col-sm-10 col-md-10">                       
+                         
+                            <span class="glyphicon glyphicon-star comment-star active"></span><span class="glyphicon glyphicon-star comment-star"></span><span class="glyphicon glyphicon-star comment-star"></span><span class="glyphicon glyphicon-star comment-star"></span><span class="glyphicon glyphicon-star comment-star"></span>
+                        
+                      </div>
+                      
+                    </div> 
+                    <notempty name="version">
+                    <div class="row well" style="font-size:14px;margin-bottom:5px;">
+                      <div class="span12">
+                      <div class="col-sm-2 col-md-2">
+                        <p class="form-control-static" style="font-size:14px;">所有型号</p>
+                      </div>
+                      <div class="col-sm-10 col-md-10 btn-toolbar" role="toolbar">
+                        
+                          <volist name="version" id="t">
+                          <eq name="t.id" value="$item.id">
+                          <a class="btn btn-info selectgroup active" href="__CONTROLLER__/viewitem/id/{$t.id}" style="margin-bottom:2px;">{$t.version|default="默认版本"} 
+                            <span class="glyphicon glyphicon-check"></span></a>
+                            <else/>
+                            <a class="btn btn-info selectgroup" href="__CONTROLLER__/viewitem/id/{$t.id}" >{$t.version|default="默认版本"}</a>
+                          </eq>
+                          
+                          
+                          </volist>
+                        
+                      </div>
+                      </div>
+                    </div> 
+                  </notempty>
+                    
+                    <div class="row" style="font-size:14px;margin-bottom:5px;">
+                      <a class="btn btn-block btn-info" href="{$item.buylink|default='https://feitui.taobao.com/?spm=2013.1.1000126.3.ItHGH8'}" target="blank">去购买 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                      <a class="btn btn-block btn-success" href="__MODULE__/Instruction/viewBfbItems/item_id/{$item.id}">基本介绍和使用方法 <span class="glyphicon glyphicon-book" style="color:brown;"></span></a>
+                    </div>
+                     <div class="row alert alert-success pre-hidden">
+                        尺寸：30*40*50(cm); 重量：50kg;
+                        <notempty name="item.life">保质期：{$item.life|htmlspecialchars_decode}
+                        </notempty>
+                      </div>
+            	
+        		
+        	</div>
+        </div>
+
+
+        <notempty name="item.life">
+        <div class="row" id="instruction-{$t.id}">
+			<div class="col-sm-3 col-md-3">
+				<h5>寿命或保质期</h5>
+			</div>
+			<div class="col-sm-9 col-md-9 demo-content demo-content-article">
+				<p>{$item.life|htmlspecialchars_decode}</p>
+			</div>
+        </div>
+    	</notempty>
+      <notempty name="item.video">
+        <div class="well">
+          {$item.video|htmlspecialchars_decode}  
+        </div>
+      </notempty>
+      <div class="panel panel-default" style="margin-top: 20px;">
+        <div class="panel-heading">
+          <h4 style="color:green;">基本参数和使用说明</h4>
+        </div>
+        <div class="panel-body">
+              <div class="tabbable" id="instruction" style="margin-top:10px;">    
+            <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tab-inst-insert" aria-controls="tab-inst-insert" role="tab" data-toggle="tab">增加说明</a></li> 
+            <li role="presentation"><a href="#tab-age" data-toggle="tab" aria-controls="tab-age" role="tab">适用年龄</a></li> 
+            <foreach name="instructions" item="t">  
+                <li role="presentation"><a href="#tab-inst-{$t.id}" data-toggle="tab" role="tab" >{$t.title}</a></li>       
+            </foreach>    
+              
+            </ul>    
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab-inst-insert" role="tabpanel">           
+                <form method="post" action="__MODULE__/instruction/insertitem" name="f1" enctype="multipart/form-data">
+                  <input name="item_id" value="{$item.id}" style="display:none;"/>
+                  <select name="title_id">
+                  <option>选择标签</option>
+                  <foreach name="title" item="t">               
+                      <option value="{$t.id}" onClick="getByTitle({$t.id},{$item_id});">{$t.title}</option>
+                  </foreach>
+                  </select>
+                  <p class="help-block">
+                  <a href="__MODULE__/instruction/viewitems">增加标签</a> 
+                  </p>
+                  <script id="container" name="content" type="text/plain"></script>
+                  <button type="submit">提交</button>
+          
+              </form>       
+              </div>
+              <div class="tab-pane" role="tabpanel" id="tab-age">  
+                <p>
+                  <notempty name="item.start_age">
+                  大于<gt name="item.start_age" value="24">
+                    {$item['start_age']/12}岁{$item['start_age']%12}个月
+                    <else/>
+                    {$item['start_age']}个月 
+                  </gt>
+                  </notempty>
+                  <notempty name="item.end_age">
+                  小于
+                  <gt name="item.end_age" value="24">
+                    {$item['end_age']/12}岁
+                    <else/>
+                    {$item['end_age']}个月 
+                  </gt>
+                 </notempty>
+                </p>
+                 <p class="help-block"><a href="__CONTROLLER__/edititem/id/{$item.id}">修改</a></p>
+              </div>   
+             
+            <foreach name="instructions" item="t">  
+              <div class="tab-pane" role="tabpanel" id="tab-inst-{$t.id}">           
+                <p>{$t.content|htmlspecialchars_decode}</p> 
+                <p class="help-block"><a href="__MODULE__/instruction/edititem/id/{$t.id}">修改</a>|
+                  <a href="__MODULE__/instruction/deleteitem/id/{$t.id}">删除</a></p>      
+              </div>       
+            </foreach>  
+     
+       
+            </div> 
+          </div>
+          <!--说明区-->  
+        </div>
+      </div>
+      
+        
+    </div>
+    <!-- /.container -->
+
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <include file="Public/flatui-tail"/>  
+    <script src="/Public/js/onload.js"></script> 
+    <!--<script type="text/javascript" src="/Public/js/bootstrap.min.js" ></script>-->
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+        var getViewGallery = function(id,viewId)
+        {
+            var params = { item_id:id, view_id:viewId,isJsonReturn:true};
+            var param = $.param(params);
+            $.ajax({ 
+              type: "post", //以post方式与后台沟通
+              url: "/index.php/Home/Bestforbaby/getImg", //与此php页面沟通
+              dataType:'json',//从php返回的值以 JSON方式 解释
+              data: param, //发给php的数据有两项，分别是上面传来的u和p
+              success: function(json){      
+                  if(json && json['error'])
+                  {
+                    
+                  }
+                  else
+                  {
+                    if (json == null) {
+                      $("#noImg").removeClass("pre-hidden").show(); 
+                      $("#carousel-example-generic").toggle(); 
+                    }
+                    else
+                    {
+                      var index = "";
+                      var n = 0;
+                      var items = "";
+                      for(i in json)
+                      {
+
+                          index  = index + "<li data-target='#carousel-example-generic' data-slide-to='"+n+"'></li>";
+                          items  = items + "<div class='item' ><img src='"+json[i].viewimg+"' style='display:inline-block;width:100%;height:100%;' ></div>";
+                          n = n + 1;
+                      }
+                      $("#noImg").hide();
+                      $("#carousel-example-generic").show(); 
+
+                      $("#galleryIndex").html(index);
+                      $("#itemImg ol li").first().addClass("active");
+
+                      $("#galleryContent").html(items);
+                      $("#itemImg div.item").first().addClass("active");
+
+                    }
+                    //var originVal =  $(event.target).html();
+                        //$(event.target).html(originVal+" <span class='glyphicon glyphicon-check'></span>");
+                  //  $("#"+id).after(json['view']);
+                  }
+                },
+              fail:function(){}
+              });
+        }
+    </script>   
+    <script type="text/javascript">
+    $(function(){
+        $("#view-size-option a").first().removeClass("btn-info").addClass("btn-danger");
+        $("#instruction ul li").first().addClass("active").addClass("li-danger");
+        $("#itemImg ol li").first().addClass("active");
+        $("#itemImg div.item").first().addClass("active");
+        var index = 0;
+        $("#itemImg ol li").each(function(){
+          $(this).attr("data-slide-to",index);
+          index = index + 1;
+        });
+       
+        
+        $("#instruction .tab-pane").first().addClass("active");
+         
+           $("#instruction .tab-pane").addClass("fade").first().addClass("in");
+           $("#itemImg div.item").first().addClass("active");
+           selectGroup();
+    });
+    </script> 
+    
+
+ 
+</body>
+</html>

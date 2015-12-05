@@ -1,0 +1,91 @@
+<include file="Public/flatui-head"/>
+    <link href="/Public/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<br>
+<div class="container">
+      <ul class="nav nav-pills" role="tablist">
+      <li><a href="__CONTROLLER__/viewitem/id/{$item.id}">{$item.name} from {$item.brand}</a></li>
+      <li><a href="__CONTROLLER__/index">管理首页 <span class='glyphicon glyphicon-home'></span></a></li>
+      </ul>
+ <form method="post" action="__CONTROLLER__/{$action}" name="f1" enctype="multipart/form-data">
+ 	<input name="item_id" type="text" id="item_id" value="{$item.id}" size="50" style="display:none" />
+      <select name="view_id">
+      <option>选择外观</option>
+      <foreach name="itemView" item="t">
+      <option value="{$t.id}">{$t.view|default="默认"}</option>
+      </foreach>
+      </select>
+      <!--<select name="size_id">
+      <option>选择规格</option>
+      <foreach name="itemSize" item="t">
+      <option value="{$t.id}">{$t.size|default="默认"}</option>
+      </foreach>
+      </select>-->
+      <input name="img" type="text" id="img" size="50" onchange="showPrev()" onFocus="showPrev()"/>
+      <input name="thumb_img" type="text" id="thumb_img" size="50" class="c-hidden" style="display:none"/>
+      <input type="button" class="btn btn-info" name="button2" id="button2" value="上传图片" onclick="window.open('__MODULE__/bestforbaby/innerupload/formname/f1/editname/img/prevname/prevImg','文件上传','left=300px,height=400,width=500');" class="btn" />
+
+      <button type="submit" class="btn btn-info">提交</button>
+      <div class="row well"><img id="prevImg" name="prevImg" style="width:50%;"> </div>
+ </form>
+      
+      <div class="row well">
+            <div class="btn-toolbar" id="itemview">
+                  <volist name="itemView" id="t">
+                  <button class="btn btn-info selectgroup" onClick="javascript:getItemImgs({$item.id},{$t.id},'itemViewContainer');">{$t.view}</button>
+                  </volist>
+            </div></div>
+            <div class="row" id="itemViewContainer">
+           
+            <foreach name="viewImgs" item="t">
+            <div class="col-sm-6 col-md-3">
+
+              <div class="thumbnail thumbnail-warning" >
+                <img data-src="{$t.thumb_img}" src="{$t.viewimg}" alt="image not found">
+                <div class="caption">
+                  <h5>{$t.name|default='name not found'}</h5>
+                  <p>{$t.company}{$t.brand}</p>
+                  <p><a role="button" class="btn btn-primary btn-block" href="__CONTROLLER__/viewitem/id/{$t.id}">详情</a>
+                   <a role="button" class="btn btn-info btn-block" href="__CONTROLLER__/edititem/id/{$t.id}">编辑</a>
+                 <a role="button" class="btn btn-default btn-block" href="__CONTROLLER__/deleteitem/id/{$t.id}">删除</a>
+               </p>
+                </div>
+              </div>
+            </div>
+          </foreach>
+</div>
+</div>
+
+<include file="Public/flatui-tail"/>
+<script type="text/javascript" src="/Public/js/onload.js"></script>
+<script type="text/javascript">
+var showPrev = function()
+{
+  alert("test");
+}
+</script>
+<script type="text/javascript">
+$("document").ready(function(){
+      var $this = $("#itemView button").first();
+      var originVal =  $this.html();
+      $("#itemView button").first().html(originVal+" <span class='glyphicon glyphicon-check'></span>");
+      $(".selectgroup").bind("click",function(e){
+        var $this = $(e.target);
+        $this.parent().children().removeClass("active").each(function(){
+         // var content = parse($(this).html(),"<");
+          //$(this).html(content[0]);
+
+        });
+        var check = $("<span class='glyphicon glyphicon-check'></span>");
+        $this.addClass("active")//.append(check);
+        
+      })
+});
+
+</script>
+</body>
+</html>

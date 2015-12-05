@@ -1,0 +1,60 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE HTML>
+<html manifest="msj_m.manifest">        
+<meta charset="gb2312">
+<title>后台管理</title>
+
+<script src="/js/jquery-1.6.4.min.js"></script>    
+<script type="text/javascript" charset="utf-8">
+
+var ajaxUpload = function()
+{
+	//var info = new array();
+	//var param = $.param(info);
+	$.ajax({ 
+		type: "post", //以post方式与后台沟通
+		url: "__MODULE__/bestforbaby/upload", //与此php页面沟通
+		dataType:'json',//从php返回的值以 JSON方式 解释
+	//	data: param, //发给php的数据有两项，分别是上面传来的u和p
+		success: function(json){alert(json['result']);},
+		fail:function(){}
+		}); 
+}
+</script>
+
+<body>
+<a href="__CONTROLLER__/">首页</a>
+<form method="post" action="__CONTROLLER__/editItem" name="f1" enctype="multipart/form-data">
+<input name="id" value="{$item.id}" style="display:none"/>
+<input name="name" placeholder="名称" value="{$item.name|stripslashes}"/>
+<input name="cn_name" placeholder="别名" value="{$item.cn_name}"/>
+<input name="country" placeholder="国家" value="{$item.country|default=''}"/>
+<input name="since" placeholder="创建年份" value="{$item.since|default='2000'}"/>
+
+ <script id="container" name="introduction" type="text/plain">
+        {$item.introduction|htmlspecialchars_decode|stripslashes}
+    </script>
+<button type="submit">修改</button>
+
+</form>
+ <!-- 加载编辑器的容器 -->
+   
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+<foreach name="instructions" item="t">
+<div>
+<p>{$t.title}</p>
+<p>{$t.content}</p>
+<a href="__MODULE__/bestforbaby/editInstruction/id/{$t.id}">修改</a>
+<a href="__MODULE__/bestforbaby/deleteInstruction/id/{$t.id}">删除</a>
+</div>
+</foreach>
+<a href="__MODULE__/bestforbaby/addInstruction/id/{$item.id}">增加说明项</a>
+</body>
+ </html>

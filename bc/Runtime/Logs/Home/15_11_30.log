@@ -1,0 +1,11 @@
+[ 2015-11-30T09:39:04+08:00 ] ::1 /index.php/Home/bestforbaby/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.047651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025821s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0102s ]
+

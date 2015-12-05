@@ -1,0 +1,51 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE HTML>
+<html manifest="msj_m.manifest">        
+<meta charset="gb2312">
+<title>码农私厨</title>
+
+<script src="/js/jquery-1.6.4.min.js"></script>    
+<script type="text/javascript" charset="utf-8">
+
+var ajaxUpload = function()
+{
+	//var info = new array();
+	//var param = $.param(info);
+	$.ajax({ 
+		type: "post", //以post方式与后台沟通
+		url: "__MODULE__/bestforbaby/upload", //与此php页面沟通
+		dataType:'json',//从php返回的值以 JSON方式 解释
+	//	data: param, //发给php的数据有两项，分别是上面传来的u和p
+		success: function(json){alert(json['result']);},
+		fail:function(){}
+		}); 
+}
+</script>
+
+<body>
+
+<foreach name="items" item="t">
+<div>
+<a href="__MODULE__/bestforbaby/viewInstruction/id/{$t.id}">{$t.title}</a>
+</div>
+</foreach>
+<form method="post" action="__MODULE__/bestforbaby/addInstruction" name="f1" enctype="multipart/form-data">
+<input name="item_id" value="{$id}" style="display:none;"/>
+<input name="title" placeholder="项目" />
+<script id="container" name="content" type="text/plain">输入内容</script>
+<button type="submit">提交</button>
+
+</form>
+ <!-- 加载编辑器的容器 -->
+   
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/Public/js/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+
+</body>
+ </html>
