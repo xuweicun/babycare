@@ -1,0 +1,54 @@
+<!-- Sidebar Header Logo-->
+<div class="sidebar-header">
+    <img src="/Public/assets/img/hlsqlogo2.png" class="img-responsive" alt="" style="display: inline-block;width: 50%;" />
+</div>
+<!-- Sidebar Menu-->
+<div class="sidebar-menu">
+    <nav id="menu" class="nav-main" role="navigation">
+        <div class="panel-body text-center">
+            <h4 style="color: white;">离线硬盘存储管理系统</h4>
+            <div class="flag" style="display: none;">
+                <img src="/Public/assets/img/flags/cn.jpg" style="display: inline-block;width: 50%;" class="img-flags" alt="" />
+            </div>
+        </div>
+        <ul class="nav nav-sidebar">
+            <li ng-class="{'active':(page_index=='main')}" ng-if="username=='useradmin'">
+                <a href="" ng-click="change_page_index('main')">
+                    <i class="fa fa-users" aria-hidden="true"></i><span>用户管理</span>
+                </a>
+            </li>
+            <li ng-class="{'active':(page_index=='user_log')}" ng-if="username=='logadmin'">
+                <a href="" ng-click="change_page_index('user_log');reload_user_log()">
+                    <i class="fa fa-gears" aria-hidden="true"></i><span>操作日志</span>
+                </a>
+            </li>
+            <li ng-class="{'active':page_index=='settings'}" ng-if="username=='logadmin'">
+                <a href="" ng-click="change_page_index('settings')">
+                    <i class="fa fa-gear" aria-hidden="true"></i><span>参数配置</span>
+                </a>
+            </li>
+            <li ng-class="{'active':page_index=='self_check_status'}" ng-if="username=='logadmin'">
+                <a href="" ng-click="change_page_index('self_check_status')">
+                    <i class="fa fa-eye" aria-hidden="true"></i><span>查看自检状态</span>
+                </a>
+            </li>
+            <li ng-class="{'active':page_index=='report'}" ng-if="username=='logadmin'">
+                <a href="" ng-click="change_page_index('report')">
+                    <i class="fa fa-bar-chart-o" aria-hidden="true"></i><span>系统报表</span>
+                </a>
+            </li>
+            <li ng-class="{'active':page_index=='caution'}" ng-if="username=='logadmin'">
+                <a href="" ng-click="change_page_index('caution')">
+                    <i class="fa fa-warning" aria-hidden="true"></i><span>告警日志</span>
+                </a>
+            </li>
+            <li>
+                <a href="" ng-click="showLogoutModal()">
+                    <i class="fa fa-hand-o-left" aria-hidden="true"></i><span>退出</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+<!-- End Sidebar Menu-->

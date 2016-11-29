@@ -1,0 +1,58 @@
+[ 2016-06-09T08:31:25+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.289861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.290038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.059397s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.063827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.123479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021128s ]
+
+[ 2016-06-09T08:31:27+08:00 ] 127.0.0.1 /index.php/Home/Bestforbaby
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `bc_category` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bc_best_for_baby` [ RunTime:0.0157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bc_best_for_baby` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bc_best_for_baby` WHERE ( 1=1 ) LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bc_category` WHERE ( layer=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+NOTIC: [8] Undefined index: company C:\wamp\www\babycare\bc\Runtime\Cache\Home\92d7e69d9d0e87e5f77ba3cb614fe4c9.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002112s ]
+

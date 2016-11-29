@@ -1,0 +1,60 @@
+[ 2016-03-17T06:13:03+08:00 ] 127.0.0.1 /index.php/business/getDeviceInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048482s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:13:07+08:00 ] 127.0.0.1 /index.php/business/checkCollision
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:13:07+08:00 ] 127.0.0.1 /index.php/business/getDeviceInfo/type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:19:58+08:00 ] 127.0.0.1 /index.php/business/getDeviceInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:20:03+08:00 ] 127.0.0.1 /index.php/business/checkCollision
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:20:03+08:00 ] 127.0.0.1 /index.php/business/getDeviceInfo/type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:22:55+08:00 ] 127.0.0.1 /index.php/business/getDeviceInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001324s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:34:04+08:00 ] 127.0.0.1 /index.php/business/systeminit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:36:16+08:00 ] 127.0.0.1 /index.php/business/getDeviceInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+ERR: 无法加载模块:Business
+
+[ 2016-03-17T06:36:21+08:00 ] 127.0.0.1 /index.php/business/AddCmdLog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: 无法加载模块:Business
+
