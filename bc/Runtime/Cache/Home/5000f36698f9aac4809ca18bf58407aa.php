@@ -19,26 +19,26 @@ $defaultClickAction:全部弃选效果;
 	<div class="row">
 		<div class="well">
 			<div class="row">
-				<a href="/admin.php/Home/Category/insertitem/layer/2">插入</a>根目录
+				<a href="/index.php/Home/Category/insertitem/layer/2">插入</a>根目录
 			</div>
 			<div class="row">
-				<?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i; if(($t["layer"]) == "2"): ?><a href="/admin.php/Home/Category/viewitem/id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a>&nbsp;<?php endif; endforeach; endif; else: echo "" ;endif; ?>
-			</div>
-		</div>
-		<div class="well">
-			<div class="row">
-				<a href="/admin.php/Home/Category/insertitem/layer/1">插入</a>二级目录
-			</div>
-			<div class="row">
-				<?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i; if(($t["layer"]) == "1"): ?><a href="/admin.php/Home/Category/viewitem/id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a>&nbsp;<?php endif; endforeach; endif; else: echo "" ;endif; ?>
+				<?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i; if(($t["layer"]) == "2"): ?><a href="/index.php/Home/Category/viewitem/id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a>&nbsp;<?php endif; endforeach; endif; else: echo "" ;endif; ?>
 			</div>
 		</div>
 		<div class="well">
 			<div class="row">
-				<a href="/admin.php/Home/Category/insertitem/layer/0">插入</a>产品
+				<a href="/index.php/Home/Category/insertitem/layer/1">插入</a>二级目录
 			</div>
 			<div class="row">
-				<?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i; if(($t["layer"]) == "0"): ?><a href="/admin.php/Home/Category/viewitem/id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a>&nbsp;<?php endif; endforeach; endif; else: echo "" ;endif; ?>
+				<?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i; if(($t["layer"]) == "1"): ?><a href="/index.php/Home/Category/viewitem/id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a>&nbsp;<?php endif; endforeach; endif; else: echo "" ;endif; ?>
+			</div>
+		</div>
+		<div class="well">
+			<div class="row">
+				<a href="/index.php/Home/Category/insertitem/layer/0">插入</a>产品
+			</div>
+			<div class="row">
+				<?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i; if(($t["layer"]) == "0"): ?><a href="/index.php/Home/Category/viewitem/id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a>&nbsp;<?php endif; endforeach; endif; else: echo "" ;endif; ?>
 			</div>
 		</div>
 	</div>

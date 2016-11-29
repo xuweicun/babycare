@@ -317,8 +317,10 @@ function navresize() {
                     <div class="drop-box">
                         <div class="arrow"></div>
                         <ul class="drop-item">
-<!--                            <li><a  target="_blank" href="--><?//=sa_base_url()?><!--">预览网站</a></li>-->
-<!--                            <li><a href="--><?//=sa_base_url()?><!--center" target="mainframe">管理中心</a></li>-->
+<!--                            <li><a  target="_blank" href="--><?php echo '<?'; ?>
+//=sa_base_url()?><!--">预览网站</a></li>-->
+<!--                            <li><a href="--><?php echo '<?'; ?>
+//=sa_base_url()?><!--center" target="mainframe">管理中心</a></li>-->
                             
                             <li><a onclick="linkMenuTree(false, '');" href="<?=sa_base_url();?>role/adminModCode.r" target="mainframe">修改密码</a></li>
                            
@@ -342,6 +344,13 @@ function navresize() {
                             <a navid="item_management" class="item">
                                 <span>后台管理</span>
                             </a>
+                            <ul>
+                                <li>
+                                    <a navid="leader_lists" href="/index.php/Home/stock/" target="mainframe" class="item">
+                                        <span>库存管理</span>
+                                    </a>
+                                </li>
+                            </ul>
                             <ul>
                                 <li>
                                     <a navid="admin_lists" href="/index.php/Home/bestforbaby/insertitem" target="mainframe" class="item">

@@ -39,29 +39,41 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="/index.php/Home/bestforbaby/index">MAMA CARE</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/index.php/Home/bestforbaby/index">首页</a></li>
+            <li class="active"><a href="/index.php/Home">首页 <span class="glyphicon glyphicon-home"></span></a></li>
             <!--<li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">分类<b class="caret"></b></a>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> 分类<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <?php if(is_array($category)): foreach($category as $key=>$t): ?><li><a href="/index.php/Home/Instruction/viewitems/ctgr_id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a></li><?php endforeach; endif; ?>              
+                <?php if(is_array($category)): foreach($category as $key=>$t): ?><li><a href="/index.php/Home/Instruction/viewbyctgr/ctgr_id/<?php echo ($t["id"]); ?>"><?php echo ($t["name"]); ?></a></li><?php endforeach; endif; ?>              
               </ul>
             </li>
           </ul> 
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fui-user"></span> 我的账户 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="fui-gear"></span> 账户设置</a></li>
+                <li><a href="#"><span class="fui-list"></span> 订单</a></li>
+                <li><a href="#"><span class="fui-tag"></span> 收藏夹</a></li>
+                <li class="divider"></li>
+                <li><a href="#">登录 <span class="fui-login"></span></a></li>
+                <li><a href="#">注销 <span class="fui-logout"></span></a></li>
+              </ul>
+            </li>           
+         </ul>
           <div id="bs-example-navbar-collapse-2" class="collapse navbar-collapse">
             <form class="navbar-form navbar-left" method="post" action="/index.php/Home/Instruction/searchitem" role="search">
               <div class="form-group">
-                <input class="form-control" name="key" type="text" placeholder="名称/用途/品牌...">
+                <input class="form-control" name="key" type="text" size="50" placeholder="名称/用途/品牌...">
               </div>
-              <button class="btn btn-danger" type="submit">搜索</button>
+              <button class="btn btn-danger" type="submit">搜索 <span class="glyphicon glyphicon-search"></span></button>
             </form>
           </div>
-        </div><!--/.nav-collapse -->
+       </div><!--/.nav-collapse --> 
       </div>
     </div>
 
