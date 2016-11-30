@@ -1,0 +1,10 @@
+[ 2016-11-30T19:44:22+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\babycare\ThinkPHP\Common\functions.php 第 1262 行.
+ERR: 无法加载控制器:Index
+
